@@ -1,0 +1,36 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{43F8DED3-7313-482E-ADD6-8F9E9F514B20}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="Crew.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="Crew">
+			<MSBuild Projects="Crew.dproj"/>
+		</Target>
+		<Target Name="Crew:Clean">
+			<MSBuild Projects="Crew.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Crew:Make">
+			<MSBuild Projects="Crew.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="Crew"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="Crew:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="Crew:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

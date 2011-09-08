@@ -1,0 +1,9 @@
+
+/Source/__history
+/Output
+/Source/Debug
+*.dsk
+*.local
+*.tvsconfig
+*.~dsk
+*.identcache
