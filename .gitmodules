@@ -1,3 +1,3 @@
 [submodule "External/BoosterFW"]
-path = External/BoosterF
+path = External/BoosterFW
 url = git@github.com:bsf/boosterfw.git

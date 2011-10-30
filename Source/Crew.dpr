@@ -5,21 +5,11 @@ program Crew;
 {$R *.dres}
 
 uses
-  midaslib,
+  midaslib, classes,
   CoreClasses,
-  bfwShellApp,
   ConfigServiceIntf,
-  classes,
-  bfwSettingManagerModuleInit,
-  bfwSecurityManagerModuleInit,
-  bfwStorageNotifierModuleInit,
-  bfwReportManagerModuleInit,
-  bfwReportEngineXLModuleInit,
-  bfwReportEngineFRModuleInit,
-  bfwEntityCatalogModuleInit,
-  bfwStorageConnIBXModuleInit,
-  bfwSecurityBaseControllerModuleInit,
-  bfwShellLayoutModuleInit;
+  bfwApp,
+  bfwModules;
 
 {$R *.res}
 
